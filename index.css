@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+.slick-slide div {
+  outline: none;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.header {
+  background-image: url(./assest/header.gif);
+  background-position: center center;
+  background-size: cover;
+  z-index: 1;
+}
+@media screen and (max-width: 1200px) {
+  .header {
+    background-image: url(./assest/header.gif);
+    height: 50vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header {
+    background-image: url(./assest/header.gif);
+    background-position: center center;
+    background-size: cover;
+    height: 125px;
+    z-index: 1;
+  }
+}
+ul li::before {
+  content: "\2022";
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.benifet img {
+  max-width: 100%;
+  max-height: 136px;
+}
+.buttonHeader {
+  border: 1 px solid rgb(255, 92, 0);
+  background-color: rgb(255, 92, 0);
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s linear 0s;
+  min-width: 220px;
+  padding: 0px 25px;
+  height: 50px;
+}
+
+.progress {
+  background-color: #d8d8d8;
+
+  position: relative;
+  margin: 15px 0;
+  height: 30px;
+}
+
+.progress-done {
+  background: linear-gradient(to right, #7b4397, #dc2430);
+
+  color: #fff;
+  display: flex;
+
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
